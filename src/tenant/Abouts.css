@@ -1,0 +1,37 @@
+.abouts-container {
+  margin-top: 80px;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #180502;
+}
+.abouts-title {
+  text-align: center;
+  color: #180502;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.abouts-section-title {
+  color: #180502;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.abouts-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.abouts-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.abouts-list {
+  font-size: 16px;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+.abouts-list li {
+  margin-bottom: 10px;
+}

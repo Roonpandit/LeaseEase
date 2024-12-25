@@ -1,0 +1,228 @@
+.auth-content {
+  justify-self: center;
+  min-width: 50%;
+  text-align: center;
+  max-height: fit-content;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://t4.ftcdn.net/jpg/07/08/30/55/360_F_708305541_GS5RpPxXI56DkLDfMFyKFZsBjnreg9uA.jpg");
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-content .welcome-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  color: #fbfcfd;
+}
+
+.auth-content .welcome-section p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #e3edf1;
+}
+.auth-content .button-container {
+  margin-top: 20px;
+}
+.auth-content .auth-button {
+  background-color: #0f1f98;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.auth-content .auth-button:hover {
+  background-color: #0b063b;
+  transform: translateY(-3px);
+}
+
+.auth-content .form-container {
+  text-align: left;
+  background-color: rgba(227, 214, 197, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  color: #00050a;
+}
+.auth-content .form-container h2 {
+  text-align: center;
+  color: #00050a;
+}
+.auth-content .form-group {
+  margin-bottom: 15px;
+}
+.auth-content .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.auth-content .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.auth-content .form-group select {
+  width: 104%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.auth-content .form-group input:hover {
+  border-color: #070816;
+  box-shadow: 0 0 5px rgba(20, 6, 111, 0.3);
+}
+.auth-content .form-group input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+}
+.auth-content .form-button {
+  width: 100%;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.auth-content .form-button:hover {
+  background-color: #00408d;
+  transform: translateY(-3px);
+}
+.auth-content .link-text {
+  color: #0056b3;
+  cursor: pointer;
+  font-weight: bold;
+}
+.auth-content .link-text:hover {
+  text-decoration: underline;
+}
+
+.home-page .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-page .service-section {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.home-page .service-section h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.home-page .card-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.home-page .card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.home-page .card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.home-page .card-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-page .card-content h3:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+.home-page .card-content p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.home-page .footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.home-page .footer-body {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.home-page .footer-extra {
+  text-align: center;
+}
+.home-page .footer-extra h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.home-page .footer-extra p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.home-page .footer-content {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .home-page .card img {
+    height: 160px;
+  }
+
+  .home-page .footer-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-page .footer-extra {
+    text-align: center;
+  }
+}

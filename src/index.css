@@ -1,0 +1,12 @@
+* {
+  margin: 0%;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0%;
+}
+body {
+  background-image: url("https://t4.ftcdn.net/jpg/08/48/09/59/360_F_848095942_fSG8snf3eQzM6rvTdkZOZ5GQXgpYLy3m.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

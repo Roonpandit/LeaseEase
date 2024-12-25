@@ -1,0 +1,238 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 70%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.Form {
+  position: fixed;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 70%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .Form {
+    width: 70%;
+    max-width: 800px;
+  }
+}
+
+.Form h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.Form form {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.Form label {
+  display: block;
+  font-weight: bold;
+  color: #353232;
+}
+
+.Form select,
+.Form textarea,
+.Form input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+}
+
+.Form select:focus,
+.Form textarea:focus,
+.Form input:focus {
+  border-color: #0a2373;
+  box-shadow: 0 0 5px rgba(10, 35, 115, 0.5);
+  outline: none;
+}
+
+.Form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.Form .submit-btns {
+  font-size: 1rem;
+  background-color: #072792;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Form .submit-btns:hover {
+  background-color: #0f0955;
+  transform: scale(1.05);
+}
+
+.Form .close-btns {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #373d42;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Form .close-btns:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+.Pending {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 100px;
+}
+.Pending .loading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.Pending .no-bill {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.Pending h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.Pending .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.Pending .card {
+  background-color: #ded1d1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Pending .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.Pending .card p {
+  margin: 5px 0;
+}
+
+.Pending .attachment a {
+  color: #0a6bd3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Pending .attachment a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.error {
+  color: red;
+}
+.Pending .btn {
+  text-align: center;
+}
+.Pending .request-btn {
+  background-color: #072792;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  width: 50%;
+  padding: 8px;
+  font-size: larger;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Pending .request-btn:hover {
+  background-color: #0f0955;
+  transform: scale(1.1);
+}
+.Pending .edit-bttn {
+  background-color: #072792;
+  color: white;
+  border: none;
+  font-size: large;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.Pending .edit-bttn:hover {
+  background-color: #0f0955;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .Pending .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Pending h1 {
+    font-size: 4rem;
+  }
+
+  .Pending .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .Pending .card h3 {
+    font-size: 1.2rem;
+  }
+}

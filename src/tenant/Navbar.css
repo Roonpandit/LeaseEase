@@ -1,0 +1,104 @@
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(3, 3, 39);
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+.nav2 div,
+.nav2 div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav2 div a {
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+.nav2 div a:hover {
+  transform: scale(1.2);
+  color: #f0f0f0;
+}
+.nav2 img {
+  height: 60px;
+  border-radius: 20%;
+  margin-right: 15px;
+}
+.nav2 .Navbar_2 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav2 .Navbar_2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: all 0.3s ease;
+}
+.nav2 .Navbar_2 a:hover {
+  color: #f0f0f0;
+  transform: scale(1.2);
+}
+
+.nav2 .logout-btn {
+  transition: transform 0.3s ease, color 0.3s ease;
+  background-color: #b40f0f;
+  color: white;
+  border: none;
+  font: size 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav2 .logout-btn:hover {
+  background-color: #4b0404;
+  transform: scale(1.2);
+}
+.nav2 .menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav2 .Navbar_2 {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(3, 3, 39);
+    position: absolute;
+    top: 60px;
+    width: 120px;
+    padding: px;
+    text-align: center;
+    right: 0;
+    gap: 10px;
+    border-radius: 5px;
+  }
+  .nav2 .Navbar_2 a,
+  .nav2 .Navbar_2 .status,
+  .nav2 .Navbar_2 .payment,
+  .nav2 .Navbar_2 .form {
+    font-size: large;
+  }
+  .nav2 .Navbar_2.show {
+    display: flex;
+  }
+  .nav2 .logout-btn {
+    margin-bottom: 5px;
+  }
+  .nav2 .menu-toggle {
+    display: block;
+  }
+}

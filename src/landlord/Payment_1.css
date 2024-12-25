@@ -1,0 +1,180 @@
+.Payment_1 {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 100px;
+}
+.Payment_1 .loading_1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.Payment_1 .filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Payment_1 .filters select {
+  font-size: 1rem;
+  padding: 4px 20px;
+  border-radius: 8px;
+}
+.Payment_1 .no-bill {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.Payment_1 h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.Payment_1 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.Payment_1 .card {
+  background-color: #ded1d1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.Payment_1 .card-content h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.Payment_1 .card-content p {
+  margin-bottom: 10px;
+}
+
+.Payment_1 .generate-bill-btn {
+  background-color: #1f21a9;
+  color: #fff;
+  border: none;
+  font-size: large;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.Payment_1 .generate-bill-btn:disabled {
+  background-color: #605e5e;
+  cursor: not-allowed;
+}
+
+.Payment_1 .generate-bill-btn:hover {
+  background-color: #160556;
+  transform: scale(1.05);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup .bill-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup .bill-form h2 {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.popup .bill-form p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.popup .bill-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #291c55;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.popup .bill-form input[type="number"],
+.popup .bill-form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.popup .submit-btns {
+  background-color: #1f21a9;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.popup .submit-btns:hover {
+  background-color: #160556;
+  transform: scale(1.05);
+}
+.popup .close-btns {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #373d42;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.popup .close-btns:hover {
+  color: black;
+  transform: scale(1.1);
+}

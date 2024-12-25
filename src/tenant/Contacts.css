@@ -1,0 +1,70 @@
+.contacts-container {
+  padding: 30px;
+  background-color: #f4f4f4;
+  margin: auto;
+  max-width: 70%;
+  margin-top: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(2, 0, 9, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contacts-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(6, 0, 10, 0.2);
+}
+.contacts-container h1 {
+  text-align: center;
+  color: #180502;
+}
+.contacts-container p {
+  text-align: center;
+  color: #180502;
+}
+.contacts-container .contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.contacts-container .input-group {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-container .input-group label {
+  font-size: 16px;
+  color: #180502;
+}
+.contacts-container .input-group input,
+.contacts-container .input-group textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.contacts-container .input-group input:hover,
+.contacts-container .input-group textarea:hover {
+  box-shadow: 0 0 20px rgba(55, 47, 147, 0.5);
+  transform: scale(1.01);
+}
+.contacts-container .input-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+.contacts-container .submit-btn {
+  background-color: #140870;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contacts-container .submit-btn:hover {
+  background-color: #07073d;
+  transform: scale(1.05);
+}
