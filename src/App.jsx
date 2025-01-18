@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuth } from './box/AuthContext';
 import './App.css'
+
 import Auth from './box/Auth'
 import About from "./box/About"
 import Contact from "./box/Contact"
