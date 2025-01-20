@@ -23,11 +23,11 @@ function Nav() {
       <div className={`nav-links ${menuOpen ? "show" : ""}`}>
         <span>
           <Link to="/About"
-          >About</Link>
+          >About Us</Link>
         </span>
         <span>
           <Link to="/Contact"
-          >Contact</Link>
+          >Contact Us</Link>
         </span>
       </div>
 

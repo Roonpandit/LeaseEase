@@ -1,48 +1,50 @@
-.Data .Bill_1 {
+.Status_1 {
   font-family: Arial, sans-serif;
   padding: 20px;
-}
-
-.Data h1 {
   margin-top: 100px;
-  text-align: center;
-  color: white;
-  margin-bottom: 30px;
-  font-size: 4rem;
-  font-family: "Times New Roman", Times, serif;
 }
-.Data .loadings {
+.Status_1 .loading {
   text-align: center;
   margin-bottom: 30px;
   color: white;
   font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
 }
-.Data .filters {
+.Status_1 .no-bill {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.Status_1 h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Status_1 .filter {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.Data .filters select {
+
+.Status_1 .filter select {
   font-size: 1rem;
   padding: 4px 20px;
   border-radius: 8px;
 }
-.Data .no-bill {
-  text-align: center;
-  margin-bottom: 30px;
-  color: white;
-  font-size: 2rem;
-  font-family: "Times New Roman", Times, serif;
-}
-.Data .cards {
+
+.Status_1 .cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
+  margin-top: 30px;
 }
-
-.Data .card {
+.Status_1 .card {
   background-color: #ded1d1;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -53,130 +55,87 @@
   transition: transform 0.3s ease;
 }
 
-.Data .card-content {
+.Status_1 .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.Status_1 .card p {
+  margin: 5px 0;
+}
+.Status_1 .attachment {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.Data .card-edit {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.Data .edit-btn,
-.Data .delete-btn {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.Data .edit-btn {
-  background-color: #1f21a9;
-  color: white;
-}
-
-.Data .delete-btn {
-  background-color: #a91b10;
-  color: white;
-}
-
-.Data .status-select {
-  margin-top: 10px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 0.9rem;
-}
-.popup_1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 1000;
+}
+.Status_1 .attachment a {
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
 }
 
-.bill_1-form {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  max-width: 500px;
-  position: relative;
-  font-family: Arial, sans-serif;
+.Status_1 .attachment a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
-
-.bill_1-form h2 {
-  font-size: 24px;
-  color: black;
-  text-align: center;
-  margin-bottom: 20px;
+.Status_1 .status-update {
+  display: flex;
 }
-
-.bill_1-form p {
-  font-size: 16px;
-  margin: 10px 0;
+.Status_1 .status-update select {
+  font-size: 1rem;
+  padding: 2px 2px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: auto;
+  margin-left: 5px;
 }
-
-.bill_1-form label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #291c55;
-  display: block;
-  margin-bottom: 5px;
-  margin-top: 10px;
-}
-
-.bill_1-form input[type="number"],
-.bill_1-form input[type="date"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  margin-bottom: 5px;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.bill_1-form .submit-btn_1 {
-  background-color: #1f21a9;
+.Status_1 .delete-btn button {
+  padding: 8px 12px;
+  background-color: rgb(172, 22, 22);
   color: white;
-  padding: 10px;
   border: none;
+  width: 100%;
+  font-size: large;
+  margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.bill_1-form .submit-btn_1:hover {
-  background-color: #160556;
-  transform: scale(1.05);
-}
-
-.bill_1-form .close-btn_1 {
-  background-color: transparent;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
-  color: #373d42;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.bill_1-form .close-btn_1:hover {
-  color: black;
+.Status_1 .delete-btn button:hover {
+  background-color: rgb(87, 5, 5);
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .Status_1 .filter select {
+    padding: 4px 20px;
+  }
+
+  .Status_1 .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Status_1 h1 {
+    font-size: 4rem;
+  }
+
+  .Status_1 .filter select {
+    padding: 2px 20px;
+  }
+
+  .Status_1 .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .Status_1 .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .Status_1 .delete-btn button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
 }

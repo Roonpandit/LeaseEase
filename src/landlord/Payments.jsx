@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "../index.css";
-import "./Payment_1.css";
+import "./Payments.css";
 import Navbar_1 from "./Navbar_1.jsx";
 import { useAuth } from "../box/AuthContext.jsx";
 
-function Payment_1() {
+function Payments() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [completedData, setCompletedData] = useState([]);
@@ -194,4 +194,4 @@ function Payment_1() {
   );
 }
 
-export default Payment_1;
+export default Payments;

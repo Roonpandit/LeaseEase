@@ -4,9 +4,13 @@
   margin-left: 0px;
   padding: 0%;
 }
-body {
+body{
   background-image: url("https://t4.ftcdn.net/jpg/08/48/09/59/360_F_848095942_fSG8snf3eQzM6rvTdkZOZ5GQXgpYLy3m.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  height: 100vh;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
 }

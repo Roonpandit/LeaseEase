@@ -26,21 +26,14 @@ function Navbar() {
       </div>
       <div className={`Navbar_2 ${menuOpen ? "show" : ""}`}>
         <Link className="status" to={"/Status"}>
-          STATUS
+          Status
         </Link>
         <Link className="form" to={"/Form"}>
-          FORM
+          Form
         </Link>
         <Link className="payment" to={"/Payment"}>
-          PAYMENT
+          Payment
         </Link>
-
-        <span>
-          <Link to="/Abouts">About</Link>
-        </span>
-        <span>
-          <Link to="/Contacts">Contact</Link>
-        </span>
         {isAuthenticated && (
           <button className="logout-btn" onClick={handleLogout}>
             Logout

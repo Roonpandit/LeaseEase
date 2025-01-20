@@ -28,21 +28,15 @@ function Navbar_1() {
         </Link>
       </div>
       <div className={`Navbar_1 ${menuOpen ? "show" : ""}`}>
-        <Link className="status" to={"/Status_1"}>
-          STATUS
+        <Link className="status" to={"/Data"}>
+          Data
         </Link>
-        <Link className="payment" to={"/Payment_1"}>
-          PAYMENT
+        <Link className="payment" to={"/Payments"}>
+          Payment
         </Link>
-        <Link className="data" to={"/Data"}>
-          DATA
+        <Link className="data" to={"/Bill"}>
+          Bill
         </Link>
-        <span>
-          <Link to="/About_1">About</Link>
-        </span>
-        <span>
-          <Link to="/Contact_1">Contact</Link>
-        </span>
         {isAuthenticated && (
           <button className="logout-btn" onClick={handleLogout}>
             Logout

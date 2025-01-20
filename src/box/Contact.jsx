@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import "../index.css";
 import "./Contact.css";
-import Nav from "./Nav";
 import emailjs from "emailjs-com";
 import { useNavigate } from "react-router-dom";
-
+import Nav from "./Nav"
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -78,12 +76,13 @@ function Contact() {
   };
 
   return (
-    <div>
-      <Nav />
+    <>
+    <Nav/>
+        <div>
       <div className="contact-container">
-        <button className="close-icon" onClick={handleClose}>
-          &times;
-        </button>
+      <button onClick={handleClose} className="close-button">
+        &times;
+      </button>
         <h1>Contact Management</h1>
         <p>
           If you have any questions or need assistance, feel free to reach out
@@ -129,6 +128,8 @@ function Contact() {
         </form>
       </div>
     </div>
+    </>
+
   );
 }
 

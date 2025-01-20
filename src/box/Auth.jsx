@@ -95,7 +95,7 @@ const Auth = () => {
     if (user) {
       login(user);
       if (user.email === "tarunvashisth0000@gmail.com") {   // {only for owner}
-        navigate("/Status_1");
+        navigate("/Data");
       } else if (user.role === "tenant") {        // {for multiple tenants}
         navigate("/Status");
       }
