@@ -29,6 +29,7 @@
   transition: all 0.3s ease;
 
 }
+
 .nav .logo-link:hover{
   transform: scale(1.2);
 
